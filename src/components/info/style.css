@@ -1,0 +1,47 @@
+.containerinfo1{
+    background-color: white;
+    border-bottom:  4px solid gray;
+     position: absolute;
+    top: 103%;
+    width: 100%;
+    height: auto;
+    
+}
+.summarise{
+     text-align: center;
+
+}
+.summarise2{
+    text-align: center;
+
+}
+img{
+    background: none;
+    width: 150px;
+    height: 150px;
+}
+.card img{
+	background-color:#4bcaff;
+    border: 10px solid #4bcaff;
+    border-radius: 100%;
+}
+.card{
+    text-align: center;
+    width: 150px;
+    height: 400px;
+    display: inline-block;
+    margin: 80px;
+}
+.card h1{
+    font-size: 15px;
+    color: black;
+    white-space: nowrap;
+}
+.card p{
+    color: gray;
+}
+.card h1:hover{
+    color:#4bcaff;
+    transition: 0.5s;
+        
+}

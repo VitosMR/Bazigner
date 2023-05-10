@@ -1,0 +1,45 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+em{
+	color:#4bcaff;
+}
+p{
+	color: white;
+}
+.nav-link{
+	color: white;
+	padding: 15px;
+	position: relative;
+	left: 270px;
+	top: 0.625rem;
+	font-family: 'Poppins', sans-serif;
+
+}
+.nav-link:hover{
+	color:#4bcaff;
+	transition: 0.5s;
+	text-decoration: underline;
+	text-underline-offset: -315%;
+	text-decoration-thickness: 0.1563rem;
+}
+.logo{
+	position: relative;
+	left: -6.75rem;
+	top: 0.625rem;
+	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
+
+}
+.nav{
+	background:rgba(0, 0, 0,0.3);
+	margin: 0;
+	height: 7.3rem;
+	position: static;
+	position: relative;
+	z-index: 1;
+}
+.toggle{
+opacity: 0;
+}

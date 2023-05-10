@@ -1,0 +1,105 @@
+.video-container {
+    width: 100%;
+    height: 550px;
+    background-color: #4bcaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-image: url('./../../img/GalleryPhoto/#2.jpg'); */
+    /* background-size: cover; 
+    background-position: center;  */
+  }
+  
+  .video-icon {
+    width: 115px;
+    height: 74px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .video-title {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+    filter: drop-shadow(0px 1px 1.5px rgba(25, 22, 24, 0.36));
+    display: flex;
+  }
+  
+  .video-description {
+    width: 673px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-container.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 9999;
+    }
+    
+    .video-container.active video {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  
+  /* .video-container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: #4bcaff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-icon {
+    position: absolute;
+    width: 115px;
+    height: 74px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .video-title {
+    font-size: 48px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Lato";
+    filter: drop-shadow(0px 1px 1.5px rgba(25, 22, 24, 0.36));
+    display: flex;
+    z-index: 1;
+  }
+  
+  iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  } */
+  

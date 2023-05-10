@@ -1,0 +1,184 @@
+.slider-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.slider__image-container {
+  position: relative;
+}
+
+.slider__image {
+  width: 168.5%;
+  height: 750px;
+  object-fit: cover;
+  border-bottom:  4px solid #4bcaff;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+
+}
+
+.slider__buttons-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.slider__button {
+  position: absolute;
+  top: -350px;
+  display: block;
+  padding: 10px;
+  background:none;
+  border:  1px solid white;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider__button:hover {
+  background-color: #4bcaff;
+}
+
+.slider__button--learn-more {
+  background-color: #4bcaff;
+  border: none;
+  width:100px;
+  height: 45px;
+}
+.slider__button--download{
+  left: -100px;
+}
+.slider__button--learn-more:hover {
+  background-color: #0b7dda;
+}
+
+.slider__title {
+  font-size: 2rem;
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+
+.slider__text {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 250px;
+  left: 700px;
+}
+
+.slider__phone-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__phone-icon {
+  display: block;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 70px;
+  height: 70px;
+  border:  1px solid white;
+  border-radius: 100%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  top: -250px;
+  left: 400px;
+}
+
+.slider__phone-icon:hover {
+  background-color: #4bcaff;
+}
+
+.slider__phone-icon-image {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.slider__controls-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.slider__control {
+  display: block;
+  margin: 0 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  top: -450px;
+  left: -300px;
+}
+
+.slider__control:hover {
+  background-color: #3891b8;
+}
+.previems {
+  position: absolute;
+  left: 190%;
+}
+.slider__dot{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  background:none;
+  border:  1px solid white;
+  border-radius: 100%;
+  margin: 5px;
+  left: 80%;
+  top: -195px;
+}
+.slider__dot.active {
+    background-color: #3891b8;
+   border:  1px solid #3891b8;
+
+}
+.slider__image--prev,
+.slider__image--next {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.slider__image--prev {
+  animation: slideOutRight 0.5s ease-in-out forwards;
+}
+
+.slider__image--next {
+  animation: slideOutLeft 0.5s ease-in-out forwards;
+}
+
+.slider__image--active {
+  z-index: 1;
+}
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
